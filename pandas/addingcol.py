@@ -1,9 +1,4 @@
-"""
-ques 1.=> how big is your data set?
-
-ques 2. => whata r the names of columns?
-"""
-
+#adding new columns in pandas
 import pandas as pd
 
 data = {
@@ -16,6 +11,11 @@ data = {
 
 df=pd.DataFrame(data)
 print(df)
-print(df.shape)     # or print(f'Shape:{df.shape}')
-print(df.columns)   # or print(f'Columns:{df.columns}')
-print(df.dtypes)    # or print(f'Data Types:{df.dtypes}')
+#square brackets df["columnn_Name"]=some data
+df["Bonus"]=df['Salary']*0.1
+print(df)
+
+#using insert method used in comapnies
+#df.insert(location, "col_name", somedata)
+df.insert(0,"Employee ID",[101,102,103,104])
+print(df)

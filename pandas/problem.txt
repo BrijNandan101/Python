@@ -1,0 +1,35 @@
+column, rows?
+what tpe of data?
+missing data?
+
+info method  => info()
+
+1- number of rows and columns
+2- data type of each column
+3- non-null count
+4- memory usage
+
+#===================================================
+
+ques 1.=> how big is your data set?
+
+ques 2. => whata r the names of columns?
+
+#======================================================
+
+1- select specific column
+==> by using [] brackets
+
+2- filter rows
+==> by using boolean operations
+
+3- combine multiple conditions
+
+#========================================================
+
+selecting columns returns:-
+1- a series
+2- a dataframe
+
+filtering rows:-
+1- boolean indexing use hogi

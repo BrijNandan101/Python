@@ -1,9 +1,3 @@
-"""
-ques 1.=> how big is your data set?
-
-ques 2. => whata r the names of columns?
-"""
-
 import pandas as pd
 
 data = {
@@ -16,6 +10,8 @@ data = {
 
 df=pd.DataFrame(data)
 print(df)
-print(df.shape)     # or print(f'Shape:{df.shape}')
-print(df.columns)   # or print(f'Columns:{df.columns}')
-print(df.dtypes)    # or print(f'Data Types:{df.dtypes}')
+
+#df.drop(columns=["Column_name"] , inplace=True/False])
+
+df.drop(columns=["Performance Score"],inplace=True)
+print (df)
