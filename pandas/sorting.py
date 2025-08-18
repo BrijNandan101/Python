@@ -17,3 +17,6 @@ print(df)
 df.sort_values(by="Age", ascending=True, inplace=True)
 print("sort age by ascending")
 print(df)
+
+#for multiple values
+#df.sort(by="col_name", ascending=True/False, inplace=True/False)

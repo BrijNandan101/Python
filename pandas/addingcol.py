@@ -11,6 +11,8 @@ data = {
 
 df=pd.DataFrame(data)
 print(df)
+
+#using assingment
 #square brackets df["columnn_Name"]=some data
 df["Bonus"]=df['Salary']*0.1
 print(df)

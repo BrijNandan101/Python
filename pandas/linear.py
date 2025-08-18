@@ -8,6 +8,14 @@ df=pd.DataFrame(data)
 print("Before interpolation")
 print(df)
 
-df['Value']=df["Value"].interpolate(method="polynomial")
+df['Value']=df["Value"].interpolate(method="linear")
 print("After interpolation")
 print(df)
+
+"""
+we can't use it with categorial data
+
+1- time series data
+2- numeric data with trends
+3- avoid dropping rows
+"""
